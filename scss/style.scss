@@ -1,0 +1,58 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0,230,171);
+    background: linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%);
+    // font-family: sans-serif;
+}
+a, a:visited, :active {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-nav {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+    li {
+        margin-right: 20px;
+    }
+}
+#logo {
+    margin-left: 20px;
+}
+.nav {
+display: flex;
+justify-content: space-between;
+padding: 5px 0px;
+}
+.header {
+    text-align: center;
+    .page-title {
+        font-weight: 400;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        font-family: sans-serif;
+    }
+    .subtitle {
+        font-weight: 400;
+    }
+}
+.news-navigation-btn {
+    width: 200px;
+    height: 200px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // flex-direction: column;
+    i {
+        // margin: 40px;
+        margin-bottom: 25px;
+        font-size: 80px;
+    }
+    font-size: 20px;
+}
