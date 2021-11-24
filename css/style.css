@@ -77,4 +77,10 @@ a, a:visited, a:active {
 .news-navigation-btn:active {
   background-color: aquamarine;
 }
+
+section#section_main {
+  margin: 0 auto;
+  font-size: 25px;
+  max-width: 80vw;
+}
 /*# sourceMappingURL=style.css.map */

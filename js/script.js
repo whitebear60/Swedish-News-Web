@@ -1,5 +1,5 @@
 let ev = document.addEventListener("DOMContentLoaded", () => {
-    let b;
+let b;
 let c = null;
 let d = {data: null}
 // var client = new XMLHttpRequest();
@@ -31,4 +31,6 @@ fetch('foo.txt')
 
 // alert("B: " + b);
 // alert("C: "+ c);
+
+
 })

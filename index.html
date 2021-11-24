@@ -9,11 +9,16 @@
     <title>Шведський вісник</title>
     <script src="https://kit.fontawesome.com/1c0d4170ec.js" crossorigin="anonymous" defer></script>
     <script src="js/script.js" defer></script>
+    <script defer>addEventListener("DOMContentLoaded", () => {
+        let btnListener = document.querySelector('#about-btn').addEventListener("click", () => {
+  window.location.href = window.location.href + 'about.html'
+})
+    })</script>
 </head>
 <body>
     <div class="container">
         <nav class="nav">
-            <img src="img/icon.png" alt="Dreamland" id="logo">
+            <a href="/"><img src="img/icon.png" alt="Dreamland" id="logo"></a>
             <ul class="main-nav">
                 <li><a href="/">Випуски</a></li>
                 <li><a href="http://esderu.fandom.com/uk/wiki/Dreamland" target="_blank" rel="noopener noreferrer">Вікі Дрімленду</a></li>
@@ -23,7 +28,7 @@
         <header class="header">
             <h1 class="page-title">Шведський вісник</h1>
             <h3 class="subtitle">Газета про все, що стосується Minecraft (і не тільки)</h3>
-            <button class="news-navigation-btn"><i class="fas fa-newspaper"></i> <br/>Дізнатися більше</button>
+            <button class="news-navigation-btn" id="about-btn"><i class="fas fa-newspaper"></i><br/>Дізнатися більше</button>
         </header>
     </div>
 </body>
