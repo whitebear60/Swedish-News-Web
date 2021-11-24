@@ -1,0 +1,80 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #00e6ab;
+  background: -webkit-gradient(linear, left top, right top, from(#00e6ab), to(#00d4ff));
+  background: linear-gradient(90deg, #00e6ab 0%, #00d4ff 100%);
+}
+
+a, a:visited, a:active {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .page-title {
+  font-weight: 400;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+.header .subtitle {
+  font-weight: 400;
+}
+
+.news-navigation-btn {
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.news-navigation-btn i {
+  margin-bottom: 25px;
+  font-size: 80px;
+}
+
+.news-navigation-btn:active {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=style.css.map */
