@@ -83,4 +83,10 @@ section#section_main {
   font-size: 25px;
   max-width: 80vw;
 }
+
+@media screen and (min-width: 605px) {
+  .main-nav:last-child {
+    margin-right: 35px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
