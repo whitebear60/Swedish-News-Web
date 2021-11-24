@@ -10,7 +10,7 @@ body {
   background: linear-gradient(90deg, #00e6ab 0%, #00d4ff 100%);
 }
 
-a, a:visited, :active {
+a, a:visited, a:active {
   color: #000;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,10 +64,17 @@ a, a:visited, :active {
   width: 200px;
   height: 200px;
   font-size: 20px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .news-navigation-btn i {
   margin-bottom: 25px;
   font-size: 80px;
+}
+
+.news-navigation-btn:active {
+  background-color: aquamarine;
 }
 /*# sourceMappingURL=style.css.map */

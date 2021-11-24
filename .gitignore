@@ -1,0 +1,4 @@
+css/*.css
+.vscode/
+.idea/
+node_modules
