@@ -1,3 +1,9 @@
 .vscode/
 .idea/
 node_modules
+package.json
+.DS_Store
+._.DS_Store
+gulpfile.json
+code.sh
+package-lock.json

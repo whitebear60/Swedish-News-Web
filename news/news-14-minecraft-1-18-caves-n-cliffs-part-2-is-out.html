@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Шведський вісник №14</title>
+    <script src="https://kit.fontawesome.com/1c0d4170ec.js" crossorigin="anonymous" defer></script>
+    <script src="../js/script.min.js" defer></script>
+    <!-- <script src="../js/news.js" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <a href="https://github.com/whitebear60/Swedish-News-Web" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <nav class="nav">
+            <a href="/Swedish-News-Web/"><img src="../img/icon.png" alt="Dreamland" id="logo"></a>
+            <ul class="main-nav"></ul>
+        </nav>
+            <h1 class="page-title">Шведський вісник №14</h1>
+            <h3 class="subtitle">У фокусі: вихід Minecraft 1.18</h3>
+        </header>
+        <section id="section_main">
+            <blockquote style="font-style: italic;">Дорогі дрімлендівці!<br>
+                <br>
+                Редакція "Шведського віснику" урочисто оголошує про повний перехід газети у онлайн-простір задля Вашої ж зручності. Відтепер Ви зможете читати нашу газету у будь-який зручний для Вас час. Аби це відсвяткувати, чотирнадцятий випуск буде цілком і повністю присвячено версії 1.18, що вийшла сьогодні. Приємного читання і приємної гри!
+                <br>
+                <span style="float: right;">Мишко, головний редактор газети</span>
+            </blockquote>
+            <br>
+            <h2>У номері:</h2>
+            <ol style="list-style: decimal;">
+                <a href="#whatsnew">
+                    <li>Minecraft 1.18: що нового</li>
+                </a>
+                <ul>
+                    <a href="#worldgen">
+                        <li>Нова генерація і все що з нею пов'язане</li>
+                    </a>
+                    <a href="#mobs">
+                        <li>Моби</li>
+                    </a>
+                    <a href="#blocks-items">
+                        <li>Блоки і предмети</li>
+                    </a>
+                    <a href="#ui">
+                        <li>Інтерфейс: текстури, налаштування та все, що з тим пов'язане</li>
+                    </a>
+                    <a href="#music">
+                        <li>Нова музика</li>
+                    </a>
+                    <a href="#advancements">
+                        <li>Нові досягнення та як їх здобути</li>
+                    </a>
+                    <a href="#technical">
+                        <li>Технічні зміни: датапаки, карти на проходження, команди</li>
+                    </a>
+                    <a href="#other">
+                        <li>Інші зміни, які не влізли у жоден з попередніх параграфів</li>
+                    </a>
+                </ul>
+                <a href="#wipe">
+                    <li>Чи буде вайп Дрімленду</li>
+                </a>
+                <a href="#install">
+                    <li>Як встановити нову версію</li>
+                </a>
+                <a href="#optifine"><li>OptiFine, Paper, Fabric та інші модифікації</li></a>
+            </ol>
+            <img id="poster" src="https://www.minecraft.net/content/dam/games/minecraft/key-art/CC2_KeyArt_1170x500.jpg.transform/minecraft-image-large/image.jpg" alt="Minecraft 1.18 Official Atwork" aria-label="Minecraft 1.18 Official Atwork" title="Minecaft 1.18 виходить 30 листопада на всіх платформах"></img>
+            <section id="whatsnew">
+                <h2>Minecraft 1.18 is out: що нового</h2>
+                <section id="worldgen">
+                    <h3>Нова генерація світу</h3>
+                    <p>Не зважаючи на те, що це оновлення називається "Печери і кручі", у цьому оновленні було перероблено усю генерацію світу. Додано купу нових біомів, в основному гірських, перейменовано деякі вже існуючі, зроблено світ у цілому більш живим і цікавим для дослідження. Тепер тут є і підземні озера, у тому числі і з лавою, і гори до 200+ висоти, і ще купа всього цікавого. Нині я не буду розписувати кожне нововведення, що стосується генерації, залишу це вам на дослідження світу.</p>
+                    <p>Підмічу лише кілька основних деталей і опишу нові біоми для гри, деякі з яких були представлені ще у снапшотах 1.17, але потім вирізані з гри на допрацювання:</p>
+                    <ol>
+                        <li>Змінено максимальну висоту світу. Тепер вона становить не 255 блоків, як раніше, а 384 блоки.</li>
+                        <li>З'явилися від'ємні координати по осі Y: висота світу рахується тепер від -64 до 320 блоку.</li>
+                        <li>Піднято рівень хмар з 128 до 192 висоти, це пов'язано із підвищенням рівня гір.</li>
+                        <li>Ну добре, трішки про печери, хоча для постійних читачів газети ця інформація аж ніяк не буде новою. З'явилися так звані рудні жили. Це великі скупчення руди в одному місці, які генеруються зрідка під землею. Можуть бути або з міді, або з заліза.</li>
+                        <ul>
+                            <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/91/Copper_Ingot_JE2_BE1.png" alt="Мідь" class="mc-item"> З міддю генеруються вище 0 висоти, руда перемішана з <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Granite_JE2_BE2.png" alt="Граніт" class="mc-item"> гранітом</li>
+                            <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fc/Iron_Ingot_JE3_BE2.png" alt="Залізо" class="mc-item"> З залізом генеруються нижче 0 висоти, руда перемішана з <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/96/Tuff_JE1_BE1.png" alt="Туф" class="mc-item"> туфом.</li>
+                            <li>Також у жилах зрідка трапляються <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Block_of_Raw_Copper_JE2_BE2.png" alt="Блок необробленої міді" class="mc-item"> блоки необробленої міді і <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/74/Block_of_Raw_Iron_JE3_BE2.png" alt="Блок необробленого заліза" class="mc-item"> блоки необробленого заліза відповідно.</li>
+                        </ul>
+                        <li>Аметистові жеоди опустили нижче 30 висоти, тепер майже не буде такого, що жеода виходить на поверхню в океані чи на якомусь гірському виступі.</li>
+                        <li>Додали <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5f/Potion_of_Water_Breathing.gif" alt="Зілля водного дихання" class="mc-item"> зілля водного дихання у зариті скарби <s>генерала Авууу</s>, які шукаються за допомогою <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a3/Map_%28item%29_JE2_BE2.png" alt="Мапа скарбів" class="mc-item">карт.</li>
+                        <li>Виправили низку "бородатих" багів у генерації світу, на кшталт генерації піщаних храмів над водою чи блоків води чи піску у повітрі</li>
+                        <li>Бедрок тепер різний у світах з різним сідом. Так, для тих, хто не знав, у версіях до 1.17.1 включно бедрок у всіх світах, включно з тими які мають різні сіди, генерувався однаково.</li>
+                        <li>Ну і наостанок: кількість скарбниць збільшилася, особливо на від'ємній висоті.</li>
+                        <li>Із новим ландшафтом змінилася і генерація руд, зведена діаграма від розробників наведена нижче. На позначку "Not final" вже можете не звертати уваги, адже останній раз генерація руд мінялася аж у снапшоті 21w40a, коли до релізу було ще далеко.</li>
+                        <div class="center" style="width: 60%; display: flex; margin: 0 auto;"><img src="https://images.ctfassets.net/8y6ykjruobr4/29MoVuTVm4HDgaYuRaEyZW/65db8f6a4c66f54fb47df33c999a7f2e/snapshot-21w-40a-ore-distribution-6th_iteration.jpg" alt="Розподіл руд у версії 1.18"></div>
+                        <span class="italic">Натисніть&nbsp;<a href="https://images.ctfassets.net/8y6ykjruobr4/29MoVuTVm4HDgaYuRaEyZW/65db8f6a4c66f54fb47df33c999a7f2e/snapshot-21w-40a-ore-distribution-6th_iteration.jpg" target="_blank" rel="noopener noreferrer">сюди</a>&nbsp;для того, аби відкрити зображення у повному розмірі</span>
+                    </ol>
+                </section>
+                <section id="mobs">
+                    <h3>Моби</h3>
+                    <ol>
+                        <li>Зміни в спавні мобів:</li>
+                        <ul>
+                            <li> <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f8/Goat_JE1_BE1.png" class="mc-entity" alt="Коза"> Кози: спавняться тепер високо у горах: на луках і гірських вершинах.</li>
+                            <li> <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/39/Blue_Axolotl_JE2.png" class="mc-entity" alt="Аксолотль">Аксолотлі: тепер спавняться тільки у "пишних" печерах у воді поруч із глиною.</li>
+                            <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2a/Glow_Squid_JE1.png" alt="Сяючий кальмар" class="mc-entity"> Сяючі кальмари: тепер спавняться тільки нижче 30 висоти. У міських річках популяція тварин зменшиться?</li>
+                            <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/ca/Clownfish.png" alt="Риба" class="mc-entity">Риба: тепер спавниться на висоті від 50 до 64, тропічна риба також може спавнитися у "пишних" печерах</li>
+                            <li>Напевне, найголовніша зміна, яка стосується спавну мобів:</li>
+                            <img src="img/news14/00.png" alt="Зміна рівня освітлення для спавну мобів">
+                            <span class="italic">Тепер моби будуть спавнитися тільки за повної відсутності освітлення.</span>
+                            <p>
+                                На зображенні Ви бачите ділянку порожнього світу, права частина якої вкрита <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/24/Light_1_JE3.png" class="mc-item" alt="Блок світла"> блоками світла із рівнем освітлення, рівним одиниці, а ліва залишена без змін. Як видно, моби спавняться тільки ліворуч.
+                            </p>
+                            <!-- <li></li> -->
+                        </ul>
+                        <li>Розбійники більше не атакують маленьких селян. Продовжуємо кампанію проти насильства, хто підтримує а хто ні - це вже справа кожного.</li>
+                        <li>Ну і наостанок приємне - тепер можна водити коней і віслюків так само, як і корів з вівцями, тримаючи в руках щось золоте (<img class="mc-item" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/54/Golden_Apple_JE2_BE2.png" alt="Золоте яблуко">, <img class="mc-item" alt="Зачароване золоте яблуко" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Enchanted_Golden_Apple_JE2_BE2.gif"> або <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/aa/Golden_Carrot_JE4_BE2.png" class="mc-item" alt="Золота морква">). Караван лам теж за вами бігтиме, якщо Ви триматимете в руках <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c7/Hay_Bale_%28UD%29_JE2_BE2.png" alt="Копиця сіна" class="mc-item">.</li>
+                    </ol>
+                </section>
+                <section id="blocks-items">
+                    <h3>Блоки і предмети</h3>
+                    <ol>
+                        <li>Краплелист тепер можна ставити тільки на <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Clay_JE2_BE2.png" alt="Глина" class="mc-item"> глину, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9b/Dirt_JE2_BE2.png" alt="Ґрунт" class="mc-item"> ґрунт, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/93/Grass_Block_JE7_BE6.png" alt="Блок трави" class="mc-item"> блоки трави, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c0/Moss_Block_JE1_BE1.png" alt="Моховий блок" class="mc-item"> мох, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/86/Mycelium_JE2_BE2.png" alt="Грибниця" class="mc-item"> грибницю (міцелій), <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Podzol_JE2_BE2.png" alt="Підзол" class="mc-item"> підзол, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dd/Rooted_Dirt_JE1_BE1.png" alt="Кореневий ґрунт" class="mc-item"> кореневий ґрунт і <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d8/Coarse_Dirt_JE1_BE1.png" alt="Загрубілий ґрунт" class="mc-item"> загрубілий ґрунт.</li>
+                        <li>Тепер якщо зрізати будь-яку лозу за кінчик, вона перестане рости. Мова йде про<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/45/Cave_Vines_Plant_%28berries%29_JE1_BE1.png" alt="Печерні лози" class="mc-item">печерні лози (які можна отримати шляхом саджання <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/93/Glow_Berries_JE1_BE1.png" alt="Сяючі ягоди" class="mc-item">сяючих ягід на стелю), ламінарію, <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/75/Twisting_Vines_Plant_JE1_BE1.png" alt="Кручені лози" class="mc-item"> кручену і <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ef/Weeping_Vines_Plant_JE1.png" alt="Плакучі лози" class="mc-item">плакучу лозу, які зустрічаються у Незері.<br>Декорувати з цими лозами стане явно простіше, бо не треба буде перейматися за те що вони можуть вирости...</li>
+                        <li>Збільшили кількість <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1b/Raw_Copper_JE3_BE2.png" alt="Необроблена мідь" class="mc-item">шматочків необробленої міді, які випадають з блоків <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fd/Copper_Ore_JE2_BE2.png" alt="Мідна руда" class="mc-item"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6f/Deepslate_Copper_Ore_JE2_BE2.png" alt="Глибосланцева мідна руда" class="mc-item"> мідної руди до 2-5, замість 2-3 у 1.17.</li>
+                        <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b9/Conduit.gif" alt="Морський провідник" class="mc-item"> Морський провідник тепер швидше ламається кайлом (раніше не було різниці, хоч кайлом ти його ламай, хоч мотикою, хоч рукою - швидкість ламання була однаковою.)</li>
+                        <!-- <li><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/34/Conduit_JE1_BE1.png" alt="Морський провідник" class="mc-item"> Морський провідник тепер швидше ламається кайлом (раніше не було різниці, хоч кайлом ти його ламай, хоч мотикою, хоч рукою - швидкість ламання була однаковою.)</li> -->
+                    </ol>
+                </section>
+                <section id="ui">
+                    <h3>Інтерфейс і текстури</h3>
+                    <ol>
+                        <li>Додано індикатор автозбереження знизу праворуч екрана, який показується, відповідно, тоді, коли гра зберігає одиночний світ. Може бути вимкнений у налаштуваннях графіки</li>
+                        <li>Додано нове налаштування графіки "Дистанція симуляції", не плутати з промальовкою чанків. Це налаштування показує, як далеко від гравця гра буде прораховувати ігрові події на кшталт руху мобів чи рідини, вимірюється, так само як і промальовка, у чанках. Зменшення значення відповідно зменшить навантаження на комп'ютер.
+                            <br/>
+                            Мінімальне значення у ванілі 5, максимальне ж рівне максимальній дальності промальовки, тобто 32 чанки.
+                        </li>
+                        <li>У налаштування звуку додали можливість змінити звукововідний пристрій. Припускаю, що це має сенс на комп'ютерах із кількома звуковими картами, я ж при перемиканні із підключеними навушниками ефекту не відчув.</li>
+                        <li>У налаштування доступності додали можливість прибрати спалахи в небі тоді, коли вдаряє блискавка під час грози. Самі ж блискавки при цьому відображатися не перестануть. Ще один крок назустріч фоточутливим людям.</li>
+                        <li>У головне меню налаштувань додали налаштування мережевої гри, куди пересунули вимикання сповіщень Realms а також туди ж додали опцію "Відображати у списках серверів". Якщо її вимкнути, то Ви не будете відображатися у списку гравців, які онлайн на сервері (при наведенні на кількість гравцвів онлайн, див. підказку нижче)</li>
+                        <img src="img/news14/01.jpg" alt="Список серверів та меню онлайну">
+                        <span class="italic">При вимкненні вищенаведеної опції Ваш нікнейм зникне із цього списку гравців, коли Ви на сервері.</span>
+                        <li>Величезна кількість виправлень текстур, серед яких і заміна старих текстур деяких частин блоків на нові із Texture Update, на кшталт низу стола картографа, і прибирання зайвих пікселів із текстури вирощеної моркви, і заміна ніжок табличок в інвентарі на необтесані. Повний перелік тут наводити не буду, бо не бачу в тому сенсу, зміни настільки мінімальні, що напевне будуть майже непомітні у грі, зате перфекціоністи посплять краще зайвих пару ночей.</li>
+                    </ol>
+
+                </section>
+                <section id="music">
+                    <h3>Музика</h3>
+                    <ol>
+                        <li>Додано нову платівку "otherside" від Ліни Рейн разом із дев'ятьма іншими композиціями від Ліни Рейн і кумі Таніоки, які грають переважно у нових печерних біомах.</li>
+                        <li>Платівку "otherside" можна буде знайти у підземних фортецях (ті, у яких портали в Енд), а також рідше у скарбницях зі спавнерами.</li>
+                        Повний плейліст з музикою можна послухати у Spotify за посиланням нижче
+
+                        <div class="center"><iframe src="https://open.spotify.com/embed/album/7yQIrNTf3pBu0FdyAJqTqb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+                        <em>Примітка. Композиція "Ancestry", яка присутня у альбомі на Spotify та інших музичних сервісах, відсутня у файлах гри і поки не використовується.</em>
+
+                    </ol>
+                </section>
+                <section id="advancements">
+                    <h3>Досягнення</h3>
+                    Додано чотири досягнення:
+                    <ol>
+                        У вкладці "Пригоди":
+                        <li><span class="advancement">"Печери та скелі"</span>. Для того щоб отримати, впадіть з 320 висоти до -62, не вмерши.</li>
+                        <div class="center"><iframe src="https://player.vimeo.com/video/651209529?h=dd3e25cb43" width="640" height="400" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <li><span class="advancement">"Зоряний торговець"</span>. Для того щоб отримати, поторгуйтесь з селянином на 320 висоті.</li>
+                        <div class="center"><iframe src="https://player.vimeo.com/video/651226065?h=f4882127dc" width="640" height="400" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <li><span class="advancement">"Звуки музики"</span>. Для того щоб отримати, принесіть програвач на луки, що в горах, і увімкніть там яку-небудь платівку...</li>
+                        <div class="center"><iframe src="https://player.vimeo.com/video/651217607?h=e78802298f" width="640" height="400" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <br>
+                        У вкладці "Незер":
+                        <li><span class="advancement">"Як вдома"</span>. Для того щоб отримати, проїдьте 50 блоків на Блукачі на лавовому озері у звичайному світі.</li>
+                        <div class="center"><iframe src="https://player.vimeo.com/video/651217725" width="640" height="400" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    </ol>
+                </section>
+                <section id="technical">
+                    <h3>Технічні зміни: датапаки, карти, сервери</h3>
+                    <ol><li>
+                        Тепер можна налаштовувати спавн мобів у спавнері за допомогою тега CustomSpawnRules (підтримується поки тільки зміна освітлення, за якого працює спавнер). Наприклад:
+                        <div class="code">
+                            <div class="command">/give @p spawner{CustomSpawnRules:{BlockLightLimit:15}} <span>// такий спавнер вимкнеться за освітлення 15, тобто працюватиме завжди завжди</span></div>
+                            
+                            <div class="command">/give @p spawner{CustomSpawnRules:{BlockLightLimit:5}} <span>// такий спавнер вимкнеться за рівня освітленості 6 і вище</span></div>
+
+                            <div class="command">/give @p spawner{CustomSpawnRules:{BlockLightLimit:0}} <span>// відповідно, такий спавнер працюватиме тільки за повної відсутності світла.</span></div>
+                        </div>
+                    </li>
+                    <li>Додано частинку <span class="setting">block_marker</span>, яка прийшла на заміну частинкам бар'єра і блока світла, і може відображати тепер майже будь-який блок.</li>
+                    <div class="italic" style="display: block; text-align: left;">Примітка. Приклади команди <span class="setting">/particle</span> на сторінках даної газети можуть бути трішки неправильними, прохання при знаходженні помилок у цих прикладах повідомити у телеграмі Мишка (<a href="http://t.me/whitebear60">@WhiteBear60</a>)</div>
+                    <div class="code">
+                        <div class="command">/particle block_marker barrier <span>// така команда повинна показати стару частинку бар'єра</span></div>
+                        <div class="command">/particle block_marker wheat[age=2] <span>// така команда повинна показати трішки підрісшу пшеницю</span></div>
+                    </div>
+                <li>Додали команду <b>/jfr</b> для моніторингу стану гри</li>
+                <li>У <em>server.properties</em> додали два налаштування: <br/><span class="setting">simulation-distance</span>: ідентичне клієнтському "Дистанція симуляції", але таке, що працює на сервері і задає максимальну дистанцію симуляції навколо гравця. Щось схоже на подібне налаштування для максимальної промальовки.<br/><span class="setting">hide-online-players</span>: якщо увімкнене, при наведенні на кількість онлайну у списку серверів, ніки гравців будуть прихованими.</li></ol>
+                </section>
+                <section id="other">
+                    <h3>Інше</h3>
+                    <ol>
+                        <li>Minecraft перейшов на Java 17, в результаті чого можуть додатися деякі труднощі у встановленні нової версії, про які нижче.</li>
+                        <li>Додали мови токі пона і Ломбардську, які, до речі, доступні і в 1.17 і, швидше за все, в 1.16</li>
+                        <li>Гравці тепер не мають спавнитися у непридатних для того місцях на кшталт води чи над озерами лави.</li>
+                        <li>Тепер сон у суху погоду не скидає таймер дощу</li>
+                    </ol>
+
+                </section>
+            </section>
+            <section id="wipe">
+                <h3>Чи буде вайп Дрімленду</h3>
+                <p>Тут я можу твердо відповісти. Ні. Вайпу не буде.</p>
+                <p>Розробники додали технологію змішування чанків, завдяки якій перехід між старими чанками і новими після оновлення до 1.18 майже непомітний, тому вайп дуже і дуже не обов'язковий, можна спокійно продовжити грати у старих світах і на новій версії.</p>
+                <!-- <p><strong>Прохання більше не піднімати це питання у серверному чаті або деінде на сервері, оскільки воно більше не актуальне.</strong></p> -->
+            </section>
+            <section id="install">
+                <h3>Як встановити 1.18</h3>
+                <p>Точніше як побороти проблему несумісності версій Java на різних лаунчерах. Тут розпишу для різних лаунчерів окремо.</p>
+                <span><i>Натисніть на зображення, аби подивитися на нього у повному розмірі.</i></span>
+                <ol style="list-style: decimal;">
+                    <li><a href="#mojang-launcher">Офіційний лаунчер</a></li>
+                    <li><a href="#tl">TLauncher</a></li>
+                    <li><a href="#multimc">MultiMC</a></li>
+                </ol>
+                <h4 id="mojang-launcher">Офіційний лаунчер</h4>
+                <p>Просто виберіть у списку версій "Останній реліз" і натисніть на зелену кнопку "Грати".Лаунчер має сам завантажити свою Java і запустити гру на ній.</p>
+                <div style="margin-right: 5px;"><a href="img/news14/04.png" target="_blank"><img src="img/news14/04.png" alt="Simple run"></a></div>
+                <p>Якщо ж Ви бажаєте завантажити свою Java і вказати лаунчеру запускати гру на ній, то раджу вам завантажити її <a href="http://jdk.java.net/17/">звідси з офіційного сайту</a> для відповідної платформи, після чого розпакуйте її, на другій вкладці натисніть на "Останній реліз", далі у розширених налаштуваннях оберіть шлях до розпакованої Java.</p>
+                <div style="display: flex;">
+                    <div style="margin-right: 5px;"><a href="img/news14/02.png" target="_blank"><img src="img/news14/02.png" alt="Tab 2"></a></div>
+                    <div><a href="img/news14/03.png" target="_blank"><img src="img/news14/03.png" alt="Custom Java selection"></a></div>
+                </div>
+
+                <h4 id="tl">TLauncher</h4>
+                <p>Так само за замовчуванням увімкнено функцію завантаження потрібної версії Java.</p>
+                <p>Користувацька Java налаштовується так само як і у випадку з ванільним лаунчером - натискаємо поряд з полем вибору Java кнопку Налаштувати..., далі ставимо кнопку згори у положення "Користувацька", і обираємо шлях до Java у себе на комп'ютері. (друге зображення нижче)</p>
+                <div style="display: flex;">
+                    <div style="margin-right: 5px;"><a href="img/news14/05.png" target="_blank"><img src="img/news14/05.png" alt="Налаштування лаунчера"></a></div>
+                    <div><a href="img/news14/06.png" target="_blank"><img src="img/news14/06.png" alt="Custom Java selection"></a></div>
+                </div>
+                <h4 id="multimc">MultiMC</h4>
+                <p>Вмикаємо специфічну версію Java у налаштуваннях інсталяції, далі алгоритм аналогічний.</p>
+                <div style="margin-right: 5px;"><a href="img/news14/07.png" target="_blank"><img src="img/news14/07.png" alt="MultiMC"></a></div>
+            </section>
+            <section id="optifine">
+                <h3>OptiFine, Fabric, Paper та інші приємності від спільноти: коли чекати</h3>
+                <p>Оптифайну вже не треба чекати, бета версія OptiFine для 1.18 вже доступна на офіційному сайті <a href="http://optifine.net">optifine.net</a>, OptiFabric теж доступний у тестовому режимі для 1.18 на <a href="https://www.curseforge.com/minecraft/mc-mods/optifabric/files/all?filter-game-version=1738749986%3A73250">офіційній сторінці</a> моду на CurseForge, те ж можна сказати, відповідно, і про <a href="https://fabricmc.net/use/">фабрик</a>.</p>
+                <p>Paper із плагінами поки недоступні для 1.18, сподіваюся, що ми не будем грати пів року на ванільному ядрі, та нічого не віщує такого сумного сценарію.</p>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
