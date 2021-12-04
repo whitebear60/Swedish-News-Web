@@ -2,20 +2,23 @@ let ev = document.addEventListener("DOMContentLoaded", () => {
 
   let nav = document.querySelector('ul.main-nav');
   let navList = [{
-    "name": "Випуски",
-    "href": "/Swedish-News-Web/"
+    "name": "Головна",
+    "href": "/Swedish-News-Web/",
+    "blank": false
   }, {
     "name": "Вікі Дрімленду",
-    "href": "http://esderu.fandom.com/uk/wiki/Dreamland"
+    "href": "http://esderu.fandom.com/uk/wiki/Dreamland",
+    "blank": true
   }, {
     "name": "Скарб генерала Авууу!",
-    "href": "http://esderu.fandom.com/uk/wiki/Скарб_генерала_Авууу!"
+    "href": "http://esderu.fandom.com/uk/wiki/Скарб_генерала_Авууу!",
+    "blank": true
   }]
   navList.forEach(elem => {
     const navLink = document.createElement("a");
     navLink.href = elem.href;
     navLink.textContent = elem.name;
-    if (elem.name !== "Випуски") {
+    if (elem.blank) {
       navLink.setAttribute("target", "_blank")
       navLink.setAttribute("rel", "noopener noreferrer")
     }
@@ -35,18 +38,39 @@ let ev = document.addEventListener("DOMContentLoaded", () => {
   //   window.location.href = window.location.href + 'about.html'
   // })
 
-  let newsBtnListener = document.querySelectorAll('.news-btn').forEach((elem) => {
-    elem.addEventListener("click", () => {
-      switch (elem.id) {
-        case 'news-14':
-          window.location.href = window.location.href + 'news/news-14-minecraft-1-18-caves-n-cliffs-part-2-is-out.html'
-          break;
-      
-        default:
-          break;
-      }
-      // console.log(elem.id);
-    })
+let hrefAppend = str => {
+  if(window.location.href.endsWith("#")) { 
+    let href = window.location.href;
+    window.location.href = href.replace(/.$/, "") + str;
+  } else {
+    window.location.href = window.location.href + str;
+}
+}
+
+
+let modal = $('#newspaper-list').iziModal({
+  title: 'Список випусків "Шведського віснику"',
+  subtitle: 'Не всі ранні випуски газети доступні у веб-версії',
+  headerColor: 'linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%)',
+  icon: 'fas fa-scroll',
+  transitionIn:	'comingIn', //	Modal opening default transition. Can be: comingIn, bounceInDown, bounceInUp, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX.
+  transitionOut:	'bounceOutUp', // 	Modal closing default transition. Can be: comingOut, bounceOutDown, bounceOutUp, fadeOutDown, fadeOutUp, , fadeOutLeft, fadeOutRight, flipOutX.
+  // transitionInOverlay: 'bounceInDown',
+  transitionOutOverlay: 'bounceOutDown',
+});
+let usefulModal = $('#useful').iziModal({
+    title: 'Корисне для гри на Дрімленді',
+    // subtitle: 'Не всі ранні випуски газети доступні у веб-версії',
+    headerColor: 'linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%)',
+    icon: 'fas fa-scroll',
+    transitionIn:	'comingIn', //	Modal opening default transition. Can be: comingIn, bounceInDown, bounceInUp, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX.
+    transitionOut:	'bounceOutUp', // 	Modal closing default transition. Can be: comingOut, bounceOutDown, bounceOutUp, fadeOutDown, fadeOutUp, , fadeOutLeft, fadeOutRight, flipOutX.
+    // transitionInOverlay: 'bounceInDown',
+    transitionOutOverlay: 'bounceOutDown',
+});
+
+  let newsBtnListener = document.querySelector('#about-btn').addEventListener("click", () => {
+      hrefAppend('about.html');
   })
 
 
@@ -86,6 +110,5 @@ let ev = document.addEventListener("DOMContentLoaded", () => {
 
   // alert("B: " + b);
   // alert("C: "+ c);
-
 
 })

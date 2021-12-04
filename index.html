@@ -9,25 +9,90 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Шведський вісник</title>
     <script src="https://kit.fontawesome.com/1c0d4170ec.js" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha512-8aOKv+WECF2OZvOoJWZQMx7+VYNxqokDKTGJqkEYlqpsSuKXoocijXQNip3oT4OEkFfafyluI6Bm6oWZjFXR0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" integrity="sha512-8vr9VoQNQkkCCHGX4BSjg63nI5CI4B+nZ8SF2xy4FMOIyH/2MT0r55V276ypsBFAgmLIGXKtRhbbJueVyYZXjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js" defer></script>
-    <script defer></script>
+
 </head>
-<body style="background: rgb(0,230,171); background: linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%);">
+<body>
     <div class="container">
         <a href="https://github.com/whitebear60/Swedish-News-Web" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-        <nav class="nav">
-            <a href="/Swedish-News-Web/"><img src="img/icon.png" alt="Dreamland" id="logo"></a>
-            <ul class="main-nav"></ul>
-        </nav>
         <header class="header">
+            <nav class="nav">
+                <a href="/Swedish-News-Web/"><img src="img/icon.png" alt="Dreamland" id="logo"></a>
+                <ul class="main-nav"></ul>
+            </nav>
             <h1 class="page-title">Шведський вісник</h1>
             <h3 class="subtitle">Газета про все, що стосується Minecraft (і не тільки)</h3>
-            <button class="news-navigation-btn news-btn" id="news-14"><i class="fas fa-mountain"></i><br/>Шведський вісник №14</button>
+            <div class="navigation-btns"><button class="news-navigation-btn news-btn" id="news-14" data-izimodal-open="#newspaper-list" ><i class="fas fa-mountain"></i><br/>Список випусків</button>
+                <!-- <br>
+                <span class="hr"></span> -->
+                <!-- <a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a> -->
+                <!-- <button class="news-btn" id="about"><i class="fas fa-newspaper"></i></button> -->
+    
+                <button class="news-navigation-btn" id="about-btn"><i class="fas fa-newspaper"></i><br/>Про газету</button>
 
-            <br>
+                <button class="news-navigation-btn" id="useful-btn" data-izimodal-open="#useful"><i class="fas fa-star"></i><br/>Корисне</button>
 
-            <!-- <button class="news-navigation-btn" id="about-btn"><i class="fas fa-newspaper"></i><br/>Дізнатися більше</button> -->
+
+                <!-- <a href="#" data-izimodal-open="#modal">Modal</a> -->
+            </div>
         </header>
+    </div>
+
+
+    <div id="newspaper-list" class="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+        <!-- Modal content -->
+        <ul style="list-style: upper-roman;">
+            <li>21w16a: новий снапшот 1.17, датапак з новими печерами і поява ведмедів на сервері</li>
+            <li>21w17a: Другий снапшот 1.17, нові подробиці 1.18, а також загадка, що стала початком довгої історії з Генералом Авууу!</li>
+            <li>21w19a і перше оголошення про пошуки скарбу.</li>
+            <li>21w20a: четвертий снапшот, четвертий "Вісник".</li>
+            <li>1.17-pre1 і про цикл розробки гри</li>
+            <li>Вихід Minecraft 1.17. Найбільший випуск за обсягом</li>
+            <li>1.17.1, "Сім чудес Лапокраю" та що не влізло у №6</li>
+            <li>Спонтанний випуск про спонтанний експериментальний снапшот №1 версії 1.18</li>
+            <li>Менш спонтанний снапшот 1.18-experimental-2 і привітання Дрімленду з третьою річницею</li>
+            <li>1.18-experimental-3 і "Географія Дрімленду"</li>
+            <li>Четвертий експериментальний снапшот і початок другої вікторини із серії "Географія Дрімленду"</li>
+            <li>1.18-experimental-5, міграція акаунтів</li>
+            <li>1.18-experimental-6, початок масової міграції, відеоінструкція на тему "Як мігрувати свій акаунт Java на акаунт Microsoft"</li>
+            <li><a href="news/news-14-minecraft-1-18-caves-n-cliffs-part-2-is-out.html">Вихід Minecraft 1.18</a></li>
+        </ul>
+    </div>
+
+    <div id="useful" class="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+        <!-- Modal content -->
+        <ul style="list-style: upper-roman;">
+            <li><a href="https://www.dropbox.com/s/z7mfrf7qerrp70v/DreamPack_03122021.zip?dl=1">DreamPack</a> (оновлено 04.12.2021)</li>
+            <li><a href="https://www.dropbox.com/s/j7c8i5wjq2db52z/UkrainianLang.zip?dl=1">Ukrainian Lang Pack</a> (виправлення помилок, допущених перекладачами української версії Minecraft, оновлено 04.12.2021)</li>
+            <li>Лаунчери: 
+                <ul>
+                    <li><a href="https://multimc.org/">MultiMC:</a>
+                    <ul>
+                        <li><a href="https://files.multimc.org/downloads/mmc-stable-win32.zip">Windows</a></li>
+                        <li><a href="https://files.multimc.org/downloads/mmc-stable-osx64.tar.gz">macOS</a></li>
+                        <li>Linux: <a href="https://files.multimc.org/downloads/mmc-stable-lin32.tar.gz">x32</a>, <a href="https://files.multimc.org/downloads/mmc-stable-lin64.tar.gz">x64</a></li>
+                    </ul>
+                    <li>Офіційний лаунчер:
+                        <ul style="list-style: decimal-leading-zero;">
+                            <li><a href=https://launcher.mojang.com/download/MinecraftInstaller.msi>Windows 7/8</a> (також 10, але рекомендується використовувати версію за посиланням нижче)</li>
+                            <li><a href="https://launcher.mojang.com/download/MinecraftInstaller.exe">Windows 10/11</a></li>
+                            <li><a href="https://launcher.mojang.com/download/Minecraft.dmg">macOS</a></li>
+                            <li>Linux: <a href="https://launcher.mojang.com/download/Minecraft.deb">*.deb</a>, <a href="https://launcher.mojang.com/download/Minecraft.tar.gz">Universal</a></li>
+                        </ul>
+                    </li>
+                    <li>TL Legacy (<a href="http://tlaun.ch/exe">Windows</a>, <a href="http://tlaun.ch/jar">Universal Jar</a>)</li>
+                    <li>GDLauncher:
+                    <ul style="list-style: decimal-leading-zero;">
+                        <li><a href="https://github.com/gorilla-devs/GDLauncher/releases/latest/download/GDLauncher-win-setup.exe">Windows</a></li>
+                        <li><a href="https://github.com/gorilla-devs/GDLauncher/releases/latest/download/GDLauncher-mac-setup.dmg">macOS</a></li>
+                        <li><a href="https://github.com/gorilla-devs/GDLauncher/releases/latest/download/GDLauncher-linux-setup.AppImage">Linux</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
