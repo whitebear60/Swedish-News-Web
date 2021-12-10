@@ -59,6 +59,15 @@ a, a:visited, a:active {
     display: flex;
     justify-content: center;
 }
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    audio {
+        margin-bottom: 15px;
+    }
+    flex-direction: column;
+}
 .nav {
 display: flex;
 justify-content: space-between;
@@ -68,6 +77,18 @@ background: linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%)
 .mc-item {
     width: 40px;
     height: 40px;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    img {
+        width: 49%;
+    }
+    :last-child {
+        margin-right: 0;
+    }
 }
 
 .modal {

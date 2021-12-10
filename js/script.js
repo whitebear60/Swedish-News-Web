@@ -27,7 +27,7 @@ let ev = document.addEventListener("DOMContentLoaded", () => {
     nav.appendChild(li)
   })
 
-  document.querySelectorAll(['img.mc-item', 'img.mc-entity']).forEach((elem) => {
+  document.querySelectorAll(['img.mc-item', 'img.mc-entity', 'img.captd']).forEach((elem) => {
     elem.setAttribute('title', elem.getAttribute('alt'))
   })
   // document.querySelectorAll('img.mc-entity').forEach((elem) => {
