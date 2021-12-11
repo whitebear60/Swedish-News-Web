@@ -90,7 +90,9 @@ background: linear-gradient(90deg, rgba(0,230,171,1) 0%, rgba(0,212,255,1) 100%)
         margin-right: 0;
     }
 }
-
+a.underline {
+    text-decoration: underline;
+}
 .modal {
     display: none;
     a {
